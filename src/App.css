@@ -1,0 +1,26 @@
+.App {
+  text-align: center;
+}
+
+.b-toggle {
+  transform: rotate(90deg);
+  border: none;
+  color: #000;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+.b-toggle:hover {
+  background-color: #f2f2f2;
+  color: #000;
+}
+
+.b-toggle-white {
+  background-color: #fff;
+}
+
+.b-toggle-white:hover {
+  background-color: #fff;
+}
+
+
