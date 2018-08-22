@@ -5,8 +5,10 @@ import { Table, ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } fro
 export default class TableExample extends Component {
     state = {
         data: [
-            {a: 1, b: 2, c: 3, d: 4, e: 5, f: 6, g: 7, link: 'https://reactstrap.github.io/components/button-dropdown/', dropdownOpen: false},
-            {a: 7, b: 6, c: 5, d: 4, e: 3, f: 2, g: 1, link: 'https://reactstrap.github.io/', dropdownOpen: false}
+            {id: 1, a: 1, b: 2, c: 3, d: 4, e: 5, f: 6, g: 7, link: 'https://reactstrap.github.io/components/button-dropdown/', dropdownOpen: false},
+            {id: 2, a: 7, b: 6, c: 5, d: 4, e: 3, f: 2, g: 1, link: 'https://reactstrap.github.io/', dropdownOpen: false},
+            {id: 3, a: 'a', b: 'b', c: 'c', d: 'd', e: 'e', f: 'f', g: 'g', link: 'https://help.github.com/', dropdownOpen: false},
+            {id: 4, a: 'g', b: 'f', c: 'e', d: 'd', e: 'c', f: 'b', g: 'a', link: 'https://stackoverflow.com/', dropdownOpen: false}
         ]
     };
 
@@ -26,7 +28,7 @@ export default class TableExample extends Component {
             }
 
             return (
-                <tr key={item.link}>
+                <tr key={item.id}>
                     <td>{item.a}</td>
                     <td>{item.b}</td>
                     <td>{item.c}</td>
